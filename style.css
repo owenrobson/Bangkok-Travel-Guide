@@ -1,0 +1,1032 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Crimson+Text:wght@600;700&family=IBM+Plex+Sans&family=Press+Start+2P&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Crimson+Text:wght@600;700&family=IBM+Plex+Sans&family=Orbitron:wght@600&family=Press+Start+2P&family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #f9f5f5;
+}
+
+
+/*========================Nav Bar=========================*/
+.nav-bar {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px lightslategray;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    position: static;
+}
+
+.logo {
+    flex: 1;
+    font-size: 40px;
+    padding: 20px;
+    margin-left: 50px;
+    font-family: Satisfy;
+}
+
+ul.menu {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.menu li {
+    flex: 1;
+    list-style-type: none;
+    font-size: 16px;
+    font-family: "Barlow Condensed";
+    text-align: center;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.menu li a:hover {
+    color: midnightblue;
+    text-decoration: underline;
+}
+
+/*=============================Banner=============================*/
+.banner {
+    background-image: url("https://cdn.getyourguide.com/img/location/5ad4fd2159068.jpeg/99.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*overflow: hidden;*/
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    /*background-size: 100%;*/
+}
+
+.banner-text-item {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-heading {
+    flex: 1;
+}
+
+.banner-heading h1 {
+    font-size: 90px;
+    font-weight: normal;
+    color: #ffffff;
+    font-family: "Barlow Condensed";
+    margin-bottom: 50px;
+}
+
+
+/* scroll down animation */
+
+.box span {
+	width: 20px;
+	height: 20px;
+  display: block;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+    position: relative;
+    top: 20px;
+}
+
+.box span:nth-child(2) {
+	animation-delay: -0.2s;
+}
+
+.box span:nth-child(3) {
+	animation-delay: -0.4s;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+		transform: rotate(45deg) translate(10px, 10px);
+	}
+	100% {
+		opacity: 0;
+	}
+}
+input {
+    border: 0;
+    padding: 10px;
+    font-size: 18px;
+    size: 200px;
+  }
+  
+  .submitDate {
+    background: #b30000;
+    width: 120px;
+    height: 40px;
+    border: none;
+    color: white;
+    margin-top: 15px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .submitDate:hover{
+    background-color: #d61f1f;
+    cursor: pointer;
+
+  }
+
+/*=========================About Us=========================*/
+.about {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    padding-top: 0;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+
+.about-us-title{
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #000;
+}
+
+.about-img {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.about-img img {
+    width:540px;
+    height: 600px;
+    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+    
+}
+
+.about-text {
+    flex: 1;
+    padding-top: 0;
+    width: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    font-family: Roboto;
+}
+
+
+.about-text h2 {
+    flex: 1;
+    padding-left: 0;
+    font-family: Barlow Condensed;
+    font-size: 40px;
+    color: #191D34;
+    width: 450px;
+}
+
+
+.about-text p {
+    font-size: 15px;
+    width: 600px;
+    line-height: 25px;
+    color: #000000;
+    font-weight: bolder;
+    padding: 20px 0;
+}
+
+/* ======================Travel Guide========================== */
+
+.travelguide{   
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+    font-family: Barlow Condensed;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.guide {
+    margin: 0 auto;
+    display: flex;
+    width: 90vw;
+    height: auto;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center; /* center the guide-box elements horizontally */
+}
+
+.guide-box {
+    height: 150px;
+    width: 150px;
+    background-color: #fff;
+    text-align: center;
+    margin-right: 20px; /* add spacing between the guide-box elements */
+    font-family: Roboto;
+    cursor: pointer;
+}
+
+.box-icon{
+    margin-top: 20px;
+}
+
+.box-text{
+    margin-top: 14px;
+}
+
+.guide-box:hover {
+    background-color: red;
+    transition: background-color 0.8s ease;
+  }
+  
+.guide-box:hover .box-icons, 
+.guide-box:hover .box-text {
+    color: white;
+    transition: color 0.2s ease;
+}
+
+.guide-box:hover .bi {
+    color: white;
+    transition: color 0.5s ease;
+}
+
+.info{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    
+}
+
+.travel-guide-info{
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+}
+  
+
+@media (max-width: 768px) {
+    .guide {
+      flex-wrap: wrap; /* wrap the guide-box elements to a new line */
+      justify-content: center; /* center the elements horizontally */
+      width: 100%; /* set the width of the container to 100% */
+    }
+  
+    .guide-box {
+      margin-right: 20px; /* remove the margin between the guide-box elements */
+      margin-bottom: 20px; /* add spacing between the guide-box elements vertically */
+      width: calc(50% - 10px); /* set the width of each element to half the container minus spacing */
+      
+    }
+  }
+  
+  
+  
+
+/*=============================Places===============================*/
+.tourtitle {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.tours{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 50px;
+    font-family: Barlow Condensed;
+    padding-bottom: 50px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+    padding-top: 0;
+  }
+  
+  .card {
+    width: 22%;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Roboto;
+    font-weight: bold;
+  }
+  
+  .card:hover {
+    filter: brightness(0.95);
+  }
+
+  
+
+  .card h3,
+  .card p, 
+  .class .price {
+    margin: 10px;
+  }
+
+  .card h3{
+    font-weight: bold;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .card button {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .rating{
+    margin-left: 10px;
+  }
+
+  .review-count{
+    position: relative;
+    right: 10px;
+  }
+
+  
+  .card img {
+    max-height: 100%; /* This sets the maximum height of the image to the height of the card */
+    display: block; /* This ensures the image is centered within the card */
+    width: 100%; /* This ensures the image takes up the full width of the card */
+    transition: filter 0.4s ease-in-out;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .card:hover img {
+    filter: brightness(0.8);
+}
+
+@media (max-width: 768px) {
+    .card-container {
+      flex-wrap: wrap; /* wrap the guide-box elements to a new line */
+      justify-content: center; /* center the elements horizontally */
+      width: 100%; /* set the width of the container to 100% */
+    }
+  
+    .card {
+      margin-right: 20px; /* remove the margin between the guide-box elements */
+      margin-bottom: 20px; /* add spacing between the guide-box elements vertically */
+      width: calc(50% - 10px); /* set the width of each element to half the container minus spacing */
+      
+    }
+  }
+  
+
+/* money */
+
+.money {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    padding-top: 0;
+    margin-top: 100px;
+}
+
+
+.container {  
+    flex: 1;
+    display: grid;
+    height: 600px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "c1 c2 ."
+      "c3 c4 ."
+      ". . .";
+  }
+  
+  .c1 { grid-area: c1; }
+  
+  .c2 { grid-area: c2; }
+  
+  .c3 { grid-area: c3; }
+  
+  .c4 { grid-area: c4; }
+
+.cp{
+    width: 300px;
+    height: 260px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+
+.spending-title {
+    flex: 1;
+    padding-left: 0;
+    font-family: Barlow Condensed;
+    font-size: 40px;
+    color: #191D34;
+    width: 450px;
+}
+
+
+.baht-text p {
+    flex: 1;
+    font-size: 14px;
+    font-family: roboto;
+    width: 620px;
+    line-height: 25px;
+    color: #000000;
+    font-weight: bolder;
+    padding: 20px 0;
+}
+
+
+
+/* currency converter */
+.converter-card{
+    flex: 2;
+    background: #ffffffd0;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 30px;
+    width: 600px;
+    height: 280px;
+    margin: 1em;
+    font-family: barlow Condensed;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.converter-card h2{
+    padding: 0 0 10px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+  }
+  input, select {
+    padding: 5px;
+    font-size: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+  button[type="submit"] {
+    padding: 5px 10px;
+    font-size: 8px;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: 0.3s background-color ease-in-out;
+  }
+  button[type="submit"]:hover {
+    background-color: #9e0000;
+  }
+
+
+/* clock */
+.clock {
+    display: flex;
+    flex: 1;
+    font-family: barlow Condensed;
+    font-size: 50px;
+    margin: 0 auto;
+}
+
+.card2-container{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    width: 96vw;
+    margin: 0 auto;
+}
+
+  
+
+/* weather */
+.card2 {
+    background: #ffffffd0;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 30px;
+    width: 240px;
+    height: 280px;
+    margin: 1em;
+    font-family: barlow Condensed;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+    font-size: 50px;
+    /* font family should be roboto and text shoudl be red */
+    
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .description {
+    text-transform: capitalize;
+    margin-left: 8px;
+  }
+
+  .cards-container{
+    display: flex;
+    justify-content: center;
+    width: 96vw;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+
+/*===============Footer===================*/
+.footer {
+    background-image: url("https://www.bangkokfoodtours.com/wp-content/uploads/2020/02/Wat-Arun-Temple-Things-to-do-in-Bangkok-at-night-Bangkok-Food-Tours-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: rgba(0, 0, 36, 0.80);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.footer .links {
+    position: relative;
+    color: #fff;
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup {
+    text-decoration: underline;
+}
+
+.links ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.links h3 {
+    font-family: Barlow Condensed;
+    font-weight: normal;
+    font-size: 23px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.links li {
+    font-family: Roboto;
+    cursor: pointer;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.links li:hover {
+    color: #FFA801;
+}
+
+/*==========================Responsive=============================*/
+@media all and (max-width: 1172px) {
+    .banner-text-item .form {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+
+    .banner-text-item .form input,
+    .banner-text-item .form .date,
+    .banner-text-item .form a {
+        flex: 1;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    .banner-text-item .form input {
+        width: 60%;
+    }
+
+    .banner-text-item .form .date {
+        width: 30%;
+    }
+
+    .banner-text-item .form .book {
+        width: 10%;
+        font-size: 14px;
+    }
+
+    .banner-heading h1 {
+        font-size: 60px;
+    }
+}
+
+@media all and (max-width: 1414px) {
+    .banner-text-item .form input {
+        width: 40%;
+    }
+
+    .banner-text-item .form .date {
+        width: 30%;
+    }
+
+    .banner-text-item .form .book {
+        width: 20%;
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 942px) {
+    .nav-bar {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        position: static;
+    }
+
+    .logo {
+        flex: 1;
+        font-size: 30px;
+        margin: 0 10px;
+        font-family: Satisfy;
+        color: #000000;
+    }
+    
+    .nav-bar ul {
+        display: block;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    
+    .menu {
+        padding: 0;
+    }
+    
+    .nav-bar ul li {
+        flex: 1;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    
+
+    .services {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .services .service-item {
+        flex: 1;
+        margin-bottom: -130px;
+        width: 400px;
+    }
+
+    .places-text {
+        margin-top: 200px;
+    }
+}
+
+@media all and (max-width: 928px) {
+    .banner .form input, a {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 1173px) {
+    .banner .form {
+        background-color: transparent;
+    }
+}
+
+@media all and (max-width: 1194px) {
+    .places .card-box p {
+        font-size: 14px;
+    }
+
+    .places .cards .text {
+        line-height: 40px;
+    }
+
+    .cards .text .h2 {
+        font-size: 12px;
+    }
+
+    .cards .img-card img {
+        height: 260px;
+    }
+}
+
+
+@media all and (max-width: 974px) {
+.card-container{
+    margin: auto;
+    justify-content: center;
+}
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 20px;
+    }
+
+    .card {
+        width: 300px;
+        height: 500px;
+        margin: 20px;
+    }
+
+    .cards .text {
+        padding: 5px;
+        font-family: Barlow Condensed;
+    }
+}
+
+
+@media all and (max-width: 1200px) {
+    .about {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .about-img {
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .about-text p{
+        font-size: 14px;
+    }
+
+    .about-text h2{
+        font-size: 35px;
+    }
+
+    .about-img img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+/* money */
+
+@media all and (max-width: 1360px) {
+    .money {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 50px;
+        padding-top: 0;
+        margin-top: 100px;
+    }
+    
+    
+    .container {  
+        margin: 0 auto;
+        width: 640px;
+      }
+
+    .cp{
+        width: 300px;
+        height: 260px;
+        margin-top: 20px;
+        margin-right: 20px;
+        border-radius: 10px;
+    }
+    
+    
+    .spending-title {
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding-left: 0;
+        font-family: Barlow Condensed;
+        font-size: 40px;
+        color: #191D34;
+        width: 450px;
+    }
+    
+    
+    .baht-text p {
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        font-size: 14px;
+        font-family: roboto;
+        width: 620px;
+        line-height: 25px;
+        color: #000000;
+        font-weight: bolder;
+        padding: 20px 0;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .container {  
+        margin: 0 auto;
+        width: 380px;
+        height: 300px;
+        margin-top: 0;
+      }
+    
+    .cp{
+        width: 180px;
+        height: 160px;
+        margin-top: 10px;
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+    
+    
+    .spending-title {
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding-left: 0;
+        font-family: Barlow Condensed;
+        font-size: 40px;
+        color: #191D34;
+        width: 450px;
+    }
+    
+    
+    .baht-text p {
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        font-size: 14px;
+        width: 450px;
+        line-height: 15px;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cards-container {
+      display: flex;
+      flex-direction: column;
+
+    }
+    .converter-card {
+      order: 2;
+      justify-content: center;
+      margin: 0 auto;
+      width: 510px;
+    }
+}
+  
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .newsletter {
+        margin-top: 0;
+    }
+
+    li {
+        font-size: 10px;
+    }
+    h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+    ul {
+        padding: 0;
+    }}
+
+
+
+
