@@ -316,21 +316,6 @@ input {
 }
   
 
-@media (max-width: 768px) {
-    .guide {
-      flex-wrap: wrap; /* wrap the guide-box elements to a new line */
-      justify-content: center; /* center the elements horizontally */
-      width: 100%; /* set the width of the container to 100% */
-    }
-  
-    .guide-box {
-      margin-right: 20px; /* remove the margin between the guide-box elements */
-      margin-bottom: 20px; /* add spacing between the guide-box elements vertically */
-      width: calc(50% - 10px); /* set the width of each element to half the container minus spacing */
-      
-    }
-  }
-  
   
   
 
@@ -1027,6 +1012,128 @@ label {
         padding: 0;
     }}
 
+    /* mobile */
+
+    @media (max-width: 415px) {
+    .about {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .about-img {
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    .about-text p{
+        font-size: 14px;
+        width: 350px
+    }
+
+    .about-text h2{
+        font-size: 26px;
+        width: 350px
+    }
+
+    .about-img img {
+        width: 260px;
+        height: 200px;
+    }
+
+    .travelguide{
+        font-size: 34px;
+    }
+    }
 
 
+@media (max-width: 768px) {
+    .guide {
+      flex-wrap: wrap; /* wrap the guide-box elements to a new line */
+      justify-content: center; /* center the elements horizontally */
+      width: 100%; /* set the width of the container to 100% */
+    }
+  
+    .guide-box {
+      margin-right: 20px; /* remove the margin between the guide-box elements */
+      margin-bottom: 20px; /* add spacing between the guide-box elements vertically */
+    }
+    
+    .box-icon{
+        margin-top: 20px;
+    }
+    
+    .box-text{
+        margin-top: 14px;
+    }
+    .money {
+        display: flex;
+        padding: 10px;
+        margin-top: 100px;
+    }
 
+    .container{
+        width: 320px;
+    }
+    .cp{
+        width: 150px;
+        height: 130px;
+    }
+
+    .spending-title{
+        width: 100%;
+    }
+
+    .baht-text{
+        width: 100%;
+    }
+    
+    .baht-text p {
+        width: 320px;
+        line-height: 20px;
+        padding: 10px 0;
+    }
+    .card2 {
+        width: 200px;
+        height: 240px;
+      }
+    .city{
+        font-size: 18px;
+    }
+    .humidity{
+        font-size: 14px;
+    }
+    .wind{
+        font-size: 14px;
+    }
+    .clock{
+        font-size: 40px;
+    }
+    .converter-card{
+        width: 364px;
+    }
+
+    .links {
+        max-width: 30%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .newsletter {
+        margin-top: 0;
+    }
+
+    li {
+        font-size: 10px;
+    }
+    h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+    ul {
+        padding: 0;
+    }}
